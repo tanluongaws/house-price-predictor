@@ -72,6 +72,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: tanluongaws/fastapi:{{ github.sha }}
+          tags: tanluongaws/fastapi:${{ github.sha }}
           context: "."
           file: "Dockerfile"
