@@ -9,14 +9,14 @@ on:
       - main
 
 jobs:
-  build:
+  workflow:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Set up Python
-        uses: action/setup-python@v5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11.2'
 
